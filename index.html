@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>士縁会｜士業が知るべき助成金活用の最新実務と事例解説</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+    <link href="[https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;700&display=swap](https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;700&display=swap)" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #1a538c;      /* 上品なブルー */
-            --secondary-color: #0e3763;    /* 濃いネイビー */
-            --accent-color: #e67e22;       /* オレンジ・ゴールド */
+            --primary-color: #1a538c;
+            --secondary-color: #0e3763;
+            --accent-color: #e67e22;
             --accent-hover: #d35400;
             --bg-light: #f8f9fa;
             --text-dark: #333333;
             --text-muted: #666666;
             --border-color: #e2e8f0;
-            --gold-light: #c5a059;
         }
 
         * {
@@ -44,7 +43,7 @@
             padding: 0 20px;
         }
 
-        /* 1. 士縁会 最上部ロゴヘッダー (画像1再現) */
+        /* 1. 最上部ロゴ */
         .site-header-shienkai {
             background-color: #ffffff;
             padding: 30px 20px 25px;
@@ -55,7 +54,6 @@
         .shienkai-logo-box {
             max-width: 500px;
             margin: 0 auto;
-            position: relative;
         }
 
         .shienkai-sub {
@@ -83,7 +81,7 @@
             font-family: 'Shippori Mincho', serif;
             font-size: 2.2rem;
             letter-spacing: 0.6em;
-            margin-right: -0.6em; /* 文字間隔補正 */
+            margin-right: -0.6em;
             color: #333333;
             font-weight: 500;
         }
@@ -149,7 +147,6 @@
             color: #ffeb3b;
         }
 
-        /* CTA エリア */
         .hero-cta-box {
             background: rgba(0, 0, 0, 0.15);
             padding: 20px 25px;
@@ -182,7 +179,7 @@
             transform: translateY(-2px);
         }
 
-        /* 各セクション */
+        /* 共通セクション */
         section {
             padding: 60px 0;
         }
@@ -195,3 +192,406 @@
             text-align: center;
             font-size: 1.6rem;
             color: var(--primary-color);
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        /* タイムスケジュール */
+        .schedule-list {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .schedule-item {
+            display: flex;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .schedule-time {
+            width: 100px;
+            font-weight: 700;
+            color: var(--primary-color);
+            flex-shrink: 0;
+        }
+
+        .schedule-content {
+            flex-grow: 1;
+        }
+
+        /* 講師紹介 */
+        .profile-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            max-width: 750px;
+            margin: 0 auto;
+            border: 1px solid var(--border-color);
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .profile-image-wrapper {
+            flex-shrink: 0;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .profile-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-title {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .profile-name {
+            font-size: 1.4rem;
+            color: var(--text-dark);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        /* 概要テーブル */
+        .info-table {
+            width: 100%;
+            max-width: 750px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            border: 1px solid var(--border-color);
+        }
+
+        .info-table th, .info-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        .info-table th {
+            width: 25%;
+            background-color: #f4f7fa;
+            color: var(--primary-color);
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        /* 主催者情報 */
+        .organizer-shienkai-card {
+            background-color: #fcfbfa;
+            border: 1px solid #f0eadd;
+            border-radius: 8px;
+            padding: 30px 20px;
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 25px;
+        }
+
+        .organizer-card-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .organizer-sub-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .org-card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        .org-badge {
+            display: inline-block;
+            background-color: #e8f1f8;
+            color: var(--primary-color);
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 3px 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+
+        .org-name {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .org-rep {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .org-contact {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .shienkai-title {
+                font-size: 1.7rem;
+            }
+
+            .profile-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 25px;
+            }
+
+            .organizer-sub-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-cta-box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .btn-cta {
+                width: 100%;
+            }
+
+            .info-table th, .info-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .info-table th {
+                background-color: transparent;
+                padding-bottom: 4px;
+            }
+
+            .info-table td {
+                padding-top: 0;
+                padding-bottom: 16px;
+            }
+
+            .schedule-item {
+                flex-direction: column;
+            }
+
+            .schedule-time {
+                margin-bottom: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="site-header-shienkai">
+        <div class="shienkai-logo-box">
+            <div class="shienkai-sub">士業専門家向け 月次 講演＆懇親会</div>
+            <div class="shienkai-title-wrap">
+                <div class="shienkai-line"></div>
+                <div class="shienkai-title">士縁会</div>
+                <div class="shienkai-line"></div>
+            </div>
+            <div class="shienkai-catch">士業の縁が、実務を深める</div>
+        </div>
+    </div>
+
+    <header class="hero">
+        <div class="container">
+            <span class="hero-badge">士業専門家向け 専門家講演 & 懇親会</span>
+            <h1>士業が知るべき<br>助成金活用の最新実務と事例解説</h1>
+            <p class="target">社会保険労務士・税理士・司法書士・行政書士・弁護士など、士業の皆様へ</p>
+
+            <div class="hero-tags">
+                <div class="hero-tag-item">📅 2026年10月7日（水）18:00〜</div>
+                <div class="hero-tag-item">📍 リスペース東京日本橋【日本橋駅30秒】</div>
+                <div class="hero-tag-item">👥 定員30名</div>
+                <div class="hero-tag-item deadline">⚠️ 申込締切：2026年9月23日（水）</div>
+            </div>
+
+            <div class="hero-cta-box">
+                <div>
+                    <strong style="font-size: 1.1rem; display: block;">参加申込はこちら</strong>
+                    <span style="font-size: 0.9rem; opacity: 0.9;">参加費 2,000円 / 懇親会費 5,500円</span>
+                </div>
+                <a href="[https://docs.google.com/forms/d/e/1FAIpQLSehGqxjAB2e3Pg5jMW5KSjAHBSL9WpttujF4eP17z13U5uHIg/viewform?usp=header](https://docs.google.com/forms/d/e/1FAIpQLSehGqxjAB2e3Pg5jMW5KSjAHBSL9WpttujF4eP17z13U5uHIg/viewform?usp=header)" class="btn-cta" target="_blank" rel="noopener noreferrer">
+                    今すぐ申し込む &rarr;
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">当日の流れ</h2>
+            <div class="schedule-list">
+                <div class="schedule-item">
+                    <div class="schedule-time">17:45</div>
+                    <div class="schedule-content">開場・受付</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">18:00</div>
+                    <div class="schedule-content">
+                        <strong>講演「採用・定着に繋がる助成金活用」</strong><br>
+                        <span style="font-size: 0.9rem; color: var(--text-muted);">講師：社会保険労務士 畑井 舞 氏</span>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">19:00</div>
+                    <div class="schedule-content">質疑応答</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">19:15</div>
+                    <div class="schedule-content">ミニセッション「私のAI活用」</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">19:30〜</div>
+                    <div class="schedule-content">懇親会（講師も参加）</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">今回の登壇者</h2>
+            <div class="profile-card">
+                <div class="profile-image-wrapper">
+                    <img src="teacher.png.png" alt="畑井 舞 氏">
+                </div>
+                <div>
+                    <div class="profile-title">社会保険労務士</div>
+                    <h3 class="profile-name">畑井 舞 氏</h3>
+                    <p>100社以上の支援実績を持ち、企業の成長と人材の定着を支える助成金活用のアドバイスをわかりやすく解説します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">料金・定員のご案内</h2>
+            <table class="info-table">
+                <tr>
+                    <th>日時</th>
+                    <td>2026年10月7日（水） 18:00〜19:30（受付開始 17:45〜）</td>
+                </tr>
+                <tr>
+                    <th>会場</th>
+                    <td>
+                        リスペース東京日本橋<br>
+                        東京都中央区日本橋2-1-17 丹生ビル５階（日本橋駅徒歩30秒）
+                    </td>
+                </tr>
+                <tr>
+                    <th>参加費</th>
+                    <td>講演のみ：2,000円 / 懇親会：5,500円</td>
+                </tr>
+                <tr>
+                    <th>定員</th>
+                    <td>30名（先着順）</td>
+                </tr>
+                <tr>
+                    <th>申込締切</th>
+                    <td>2026年9月23日（水）</td>
+                </tr>
+            </table>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="[https://docs.google.com/forms/d/e/1FAIpQLSehGqxjAB2e3Pg5jMW5KSjAHBSL9WpttujF4eP17z13U5uHIg/viewform?usp=header](https://docs.google.com/forms/d/e/1FAIpQLSehGqxjAB2e3Pg5jMW5KSjAHBSL9WpttujF4eP17z13U5uHIg/viewform?usp=header)" class="btn-cta" style="background-color: var(--accent-color); color: #ffffff;" target="_blank" rel="noopener noreferrer">
+                    今すぐ申し込む &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">主催者のご紹介</h2>
+
+            <div class="organizer-shienkai-card">
+                <div class="shienkai-sub" style="font-size: 0.8rem;">士業専門家向け 月次 講演＆懇親会</div>
+                <div class="shienkai-title" style="font-size: 2rem; margin-top: 5px; margin-bottom: 5px;">士 縁 会</div>
+                <div class="shienkai-catch">士業の縁が、実務を深める</div>
+            </div>
+
+            <div class="organizer-card-grid">
+                <div class="org-card">
+                    <span class="org-badge">主催</span>
+                    <div class="org-name">合同会社TSC</div>
+                    <div class="org-rep">代表社員 鍋島 重茂</div>
+                    <div class="org-contact">
+                        <span>📞 03-4500-2490</span>
+                        <span>✉ soudan@tsc-p.com</span>
+                    </div>
+                </div>
+
+                <div class="organizer-sub-grid">
+                    <div class="org-card">
+                        <span class="org-badge">共催</span>
+                        <div class="org-name">クシィ・グローブ合同会社</div>
+                        <div class="org-rep">公認会計士 栗原 祐介</div>
+                    </div>
+                    <div class="org-card">
+                        <span class="org-badge">共催</span>
+                        <div class="org-name">ななくり行政書士事務所</div>
+                        <div class="org-rep">行政書士 山本 百合香</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 士縁会 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
