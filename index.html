@@ -103,6 +103,13 @@
     box-shadow:0 14px 24px -14px rgba(0,131,176,.5);
   }
   .btn:hover{background:var(--blue-deep);transform:translateY(-1px);}
+  .btn-outline{
+    display:inline-block;background:transparent;color:var(--blue-main);
+    border:1px solid var(--blue-main);font-weight:600;font-size:13px;
+    padding:6px 14px;border-radius:2px;margin-top:8px;
+    transition:all .2s ease;
+  }
+  .btn-outline:hover{background:var(--blue-main);color:#fff;}
   .hero-foot-line{height:64px;}
 
   section{padding:78px 0;}
@@ -134,6 +141,22 @@
     background:var(--blue-deep);color:#fff;font-weight:600;white-space:nowrap;
   }
   .subsidy-table tr:nth-child(even){background:var(--blue-pale);}
+
+  /* ---------- OUTLINE TABLE ---------- */
+  .outline-table{
+    width:100%;border-collapse:collapse;background:var(--paper-card);
+    border:1px solid var(--line);font-size:15px;margin-top:20px;
+  }
+  .outline-table th, .outline-table td{
+    padding:18px 22px;border:1px solid var(--line);text-align:left;
+  }
+  .outline-table th{
+    background:var(--blue-pale);color:var(--blue-deep);width:22%;
+    font-weight:700;white-space:nowrap;
+  }
+  .venue-note{
+    font-size:13px;color:var(--ink-soft);margin-top:8px;display:block;
+  }
 
   /* ---------- TIMELINE ---------- */
   .timeline{position:relative;margin-top:10px;}
@@ -190,6 +213,8 @@
     .info-card{grid-template-columns:1fr;}
     .about-grid,.speaker-grid{grid-template-columns:1fr;}
     .speaker-grid{gap:30px;}
+    .outline-table th, .outline-table td{display:block;width:100%;}
+    .outline-table th{background:var(--blue-deep);color:#fff;}
     .t-row{grid-template-columns:80px 1fr;}
     .timeline::before{left:38px;}
     .t-row::after{left:34px;}
@@ -219,20 +244,20 @@
       <span>顧問先への「提案力」を高める助成金活用術</span>
     </h2>
     <p class="hero-lead">
-      社会保険労務士であっても「"全員"が助成金相談に強い」わけではありません。<br>
-      士業事務所も活用できる、人材定着の助成金から、<br>
+      社会保険労務士であっても「全員が助成金相談に強い」わけではありません。<br>
+      本セミナーでは、士業事務所自身が活用できる人材確保・定着の助成金から、<br>
       知っておくことで顧問先の信頼と提案力を高める活用ノウハウまで、<br>
-      現役の社会保険労務士が分かりやすく解説します。
+      現役の社会保険労務士が分かりやすく直接解説します。
     </p>
 
     <div class="info-card" style="width: fit-content;">
       <div>
         <div class="info-label">開催日時</div>
-        <div class="info-value">2026年10月7日（水） <small>18:00〜19:30（懇親会は19:30〜）</small></div>
+        <div class="info-value">2026年10月7日（水） <small>18:00〜19:30（懇親会 19:30〜）</small></div>
       </div>
       <div>
         <div class="info-label">会場</div>
-        <div class="info-value">東京駅近郊<small>【詳細は参加者へご案内】</small></div>
+        <div class="info-value">東京都中央区日本橋3-3-3<small>加藤ビル２階（セミナー会場）</small></div>
       </div>
       <div>
         <div class="info-label">定員</div>
@@ -317,6 +342,46 @@
   </div>
 </section>
 
+<section class="outline" style="background:var(--paper-card); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">開催概要・アクセス</span>
+      <h2>日時・会場・参加費</h2>
+    </div>
+    <table class="outline-table">
+      <tbody>
+        <tr>
+          <th>開催日時</th>
+          <td>2026年10月7日（水） 18:00〜19:30 （開場 17:45〜／懇親会 19:30〜）</td>
+        </tr>
+        <tr>
+          <th>セミナー会場</th>
+          <td>
+            <strong>東京都中央区日本橋3-3-3 加藤ビル２階</strong><br>
+            <a class="btn-outline" href="https://x.gd/7dGnT" target="_blank" rel="noopener">Google Mapsで見る ↗</a>
+            <span class="venue-note">※スペース詳細：<a href="https://www.spacemarket.com/spaces/uu0faauoiw6k8cgb/" target="_blank" rel="noopener" style="color:var(--blue-main); text-decoration:underline;">スペーシー日本橋加藤ビル</a></span>
+          </td>
+        </tr>
+        <tr>
+          <th>懇親会会場</th>
+          <td>
+            セミナー会場周辺の店舗にて開催予定<br>
+            <span class="venue-note">※懇親会会場は別途ご案内いたします。</span>
+          </td>
+        </tr>
+        <tr>
+          <th>参加費</th>
+          <td>セミナー参加費：2,000円 ／ 懇親会費：6,000円</td>
+        </tr>
+        <tr>
+          <th>定員</th>
+          <td>20名（先着順）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
 <section class="schedule">
   <div class="wrap">
     <div class="section-head">
@@ -348,7 +413,7 @@
         <div class="t-time">19:30〜</div>
         <div class="t-body">
           <div class="t-title">懇親会</div>
-          <div class="t-desc">講師も参加。士業同士で情報交換や実務の相談ができる貴重な機会です</div>
+          <div class="t-desc">講師も参加。士業同士で情報交換や実務の相談ができる貴重な機会です（※会場別途）</div>
         </div>
       </div>
     </div>
